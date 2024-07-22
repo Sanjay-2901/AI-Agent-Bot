@@ -10,7 +10,7 @@
   document.head.appendChild(link);
 
   const chatButtonImage = document.createElement('img');
-  chatButtonImage.src = '/images/chat.png';
+  chatButtonImage.src = 'https://ai-agent-bot.vercel.app/images/chat.png';
   chatButton.appendChild(chatButtonImage);
   const chatWindow = document.createElement('div');
   chatWindow.className = 'chat-window';
@@ -21,7 +21,7 @@
   chatCloseButton.style.display = 'none';
 
   const chatCloseButtonImage = document.createElement('img');
-  chatCloseButtonImage.src = '/images/close.png';
+  chatCloseButtonImage.src = 'https://ai-agent-bot.vercel.app/images/close.png';
   chatCloseButton.appendChild(chatCloseButtonImage);
   chatWindow.appendChild(chatCloseButton);
 
