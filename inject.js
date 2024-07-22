@@ -10,7 +10,7 @@
   document.head.appendChild(link);
 
   const chatButtonImage = document.createElement('img');
-  chatButtonImage.src = '/assets/images/chat_white.png';
+  chatButtonImage.src = '/images/chat.png';
   chatButton.appendChild(chatButtonImage);
   const chatWindow = document.createElement('div');
   chatWindow.className = 'chat-window';
