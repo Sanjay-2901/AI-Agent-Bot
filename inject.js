@@ -21,13 +21,14 @@
   chatCloseButton.style.display = 'none';
 
   const chatCloseButtonImage = document.createElement('img');
-  chatCloseButtonImage.src = '/assets/images/close_white.png';
+  chatCloseButtonImage.src = '/images/close.png';
   chatCloseButton.appendChild(chatCloseButtonImage);
   chatWindow.appendChild(chatCloseButton);
 
   const chatIframe = document.createElement('iframe');
   chatIframe.className = 'chat-iframe';
-  chatIframe.src = `https://ai-agent.yavar.ai/?access_token=${window.access_tokens}`;
+  chatIframe.frameBorder = 0;
+  chatIframe.src = `https://ai-agent.yavar.ai/?access_token=${window.bot_key}`;
   chatWindow.appendChild(chatIframe);
 
   document.body.appendChild(chatButton);
