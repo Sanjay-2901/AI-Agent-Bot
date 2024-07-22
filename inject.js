@@ -1,13 +1,13 @@
 (function () {
-  const chatButton = document.createElement('button');
-  chatButton.className = 'chat-button';
-  chatButton.onclick = toggleChat;
-
   const link = window.document.createElement('link');
   link.rel = 'stylesheet';
   link.type = 'text/css';
-  link.href = '/index.css';
+  link.href = './index.css';
   document.head.appendChild(link);
+
+  const chatButton = document.createElement('button');
+  chatButton.className = 'chat-button';
+  chatButton.onclick = toggleChat;
 
   const chatButtonImage = document.createElement('img');
   chatButtonImage.src = 'https://ai-agent-bot.vercel.app/images/chat.png';
