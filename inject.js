@@ -28,7 +28,7 @@
   const chatIframe = document.createElement('iframe');
   chatIframe.className = 'chat-iframe';
   chatIframe.frameBorder = 0;
-  chatIframe.src = `https://ai-agent.yavar.ai/?access_token=${window.bot_key}`;
+  chatIframe.src = `https://ai-agent.yavar.ai/?access_token=${window.botKey}`;
   chatWindow.appendChild(chatIframe);
 
   document.body.appendChild(chatButton);
