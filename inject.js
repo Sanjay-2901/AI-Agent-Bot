@@ -14,11 +14,11 @@
   chatButton.appendChild(chatButtonImage);
   const chatWindow = document.createElement('div');
   chatWindow.className = 'chat-window';
-  chatWindow.onclick = toggleChat;
 
   const chatCloseButton = document.createElement('button');
   chatCloseButton.className = 'chat-close-button';
   chatCloseButton.style.display = 'none';
+  chatCloseButton.onclick = toggleChat;
 
   const chatCloseButtonImage = document.createElement('img');
   chatCloseButtonImage.src = 'https://ai-agent-bot.vercel.app/images/close.png';
@@ -28,7 +28,7 @@
   const chatIframe = document.createElement('iframe');
   chatIframe.className = 'chat-iframe';
   chatIframe.frameBorder = 0;
-  chatIframe.src = `https://ai-agent.yavar.ai/?access_token=${window.botKey}`;
+  chatIframe.src = `https://ai-agent.yavar.ai/?access_token=${window.botKey}&bot_id=${window.botId}`;
   chatWindow.appendChild(chatIframe);
 
   document.body.appendChild(chatButton);
