@@ -2,7 +2,7 @@
   const link = window.document.createElement('link');
   link.rel = 'stylesheet';
   link.type = 'text/css';
-  link.href = './index.css';
+  link.href = 'https://ai-agent-bot.vercel.app/index.css';
   document.head.appendChild(link);
 
   const chatButton = document.createElement('button');
